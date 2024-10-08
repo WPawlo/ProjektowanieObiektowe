@@ -1,0 +1,105 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.time.LocalTime;
+
+class Zestaw1 {
+    public static void main(String[] args) {
+        System.out.println("Zadanie 1:");
+        System.out.println("Wiktor Pawlowski");
+        String imie = "Wiktor";
+        String naz = "Pawlowski";
+        System.out.println("Zadanie 2:");
+        System.out.println("Imie: "+imie.length());
+        System.out.println("Nazwisko: "+naz.length());
+        System.out.println("Zadanie 3:");
+        String A = "Ala";
+        String B = "ma";
+        String C = "kota";
+        System.out.println(A+" "+B+" "+C);
+        System.out.println("Zadanie 4:");
+        System.out.println("                    *");
+        System.out.println("                    * *");
+        System.out.println("                    * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * * *");
+        System.out.println("* * * * * * * * * * * * * *");
+        System.out.println("                    * * *");
+        System.out.println("                    * *");
+        System.out.println("                    *");
+        System.out.println("     *     ");
+        System.out.println("    * *    ");
+        System.out.println("   * * *   ");
+        System.out.println("  * * * *  ");
+        System.out.println(" * * * * * ");
+        System.out.println("* * * * * *");
+        System.out.println(" * * * * * ");
+        System.out.println("  * * * *  ");
+        System.out.println("   * * *   ");
+        System.out.println("    * *    ");
+        System.out.println("     *     ");
+        System.out.println("Zadanie 5:");
+        String zad5 = "Ala ma kota";
+        System.out.println(zad5.replace('A', 'E').replace('a', 'e'));
+        System.out.println("Zadanie 6:");
+        System.out.println(zad5.toUpperCase());
+        System.out.println(zad5.toLowerCase());
+        System.out.println("Zadanie 7:");
+        char ch1 = 'A';
+        char ch2 = '!';
+        char ch3 = '@';
+        char ch4 = '>';
+        char ch5 = '~';
+        char ch6 = '\n';
+        char ch7 = '\b';
+        int ascii1 = ch1;
+        int ascii2 = ch2;
+        int ascii3 = ch3;
+        int ascii4 = ch4;
+        int ascii5 = ch5;
+        int ascii6 = ch6;
+        int ascii7 = ch7;
+        System.out.println("ASCII znakow: \n" + ch1 + "=" + ascii1 +"\n" +
+        ch2 + "=" + ascii2 +"\n" +
+        ch3 + "=" + ascii3 +"\n" +
+        ch4 + "=" + ascii4 +"\n" +
+        ch5 + "=" + ascii5 +"\n" +
+        "\\n" + "=" + ascii6 +"\n" +
+        "\\b" + "=" + ascii7 +"\n");
+        System.out.println("Zadanie 8:");
+        char malaa = 'a';
+        char malaz = 'z';
+        int asciia = malaa;
+        int asciiz = malaz;
+        char duzez = 'Z';
+        int asciidz = duzez;
+        char cyfrap = '1';
+        char cyfrao = '9';
+        int asciiJeden = cyfrap;
+        int asciiDziewiec = cyfrao;
+        System.out.println("ASCII przedzialy: \n Male litery: " + asciia + " do " + asciiz + "\n Duze litery: " + ascii1 + " do " + asciidz + "\n Cyfry: " + asciiJeden + " do " + asciiDziewiec);
+        System.out.println("Zadanie 9:");
+        System.out.println("Grzesiek nie wiedzial dlaczego leniwiec jest tak drapieznym zwierzeciem mimo, ze jego zachowanie na to nie wskazuje.");
+        System.out.println("Zadanie 10:");
+        System.out.println("Wiedzmin to najlepsza ksiazka napisana przez Andrzeja Sapkowskiego.");
+        System.out.println("Zadanie 11:");
+        String slowo = "wodrze";
+        System.out.println(slowo.repeat(5));
+        System.out.println("Zadanie 12:");
+        Date currDate = new Date();
+        SimpleDateFormat formatPattern = new SimpleDateFormat("dd-MM-yyyy");
+	    String formatDate = formatPattern.format(currDate);
+	    Date time = new java.util.Date(System.currentTimeMillis());
+        System.out.println("Dzisiaj jest "+ formatDate +" godzina " + LocalTime.now().withNano(0) + ".");
+        System.out.println("Zadanie 13:");
+        System.out.println((char)54);
+        System.out.println((char)103);
+        System.out.println((char)241);
+        System.out.println((char)67);
+        System.out.println((char)9999);
+        System.out.println((char)6);
+        System.out.println((char)8);
+        System.out.println((char)175651);
+    }
+}
